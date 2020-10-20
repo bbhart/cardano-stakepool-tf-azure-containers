@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# Cardano staking pool on Azure
 
-You can use the [editor on GitHub](https://github.com/bbhart/cardano-stakepool-tf-azure-containers/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Step-by-step instructions for configuring a complete Cardano staking pool 
+on Azure. By making use of tools like [Terraform](https://www.terraform.io/) and 
+Linux containers, our goal is to minimize the amount of manual work involved in setting 
+up a pool. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I am not a Terraform, Azure, container, or Cardano expert, so what you are reading is my learning process. **There are no warranties.** I may be doing things
+that are bad practice, expensive, overly complicated, or insecure (though I'm hyper-focused 
+on avoiding this last point).
 
-### Markdown
+The subtasks are:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. **Laptop setup.** Set up tools on my laptop.
+1. **Azure bootstrap.** Create *just* enough Azure infrastructure to bootstrap Terraform.
+1. **Terraform working from laptop.** Make sure I can use Terraform to configure Azure.
+1. **Write Terraform file(s) for one node.** Get generic Cardano container running from official image.
+1. **Create config files.** Create and push config files for one customized Cardano container.
+1. **Scale to cluster.** Expand so that we have 1 block-producing node and 2 relays, with some 
+geographic redundancy.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+References
+----------
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bbhart/cardano-stakepool-tf-azure-containers/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. https://blog.logrocket.com/real-world-azure-resource-management-with-terraform-and-docker/
