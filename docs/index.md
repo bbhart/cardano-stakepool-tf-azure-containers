@@ -6,14 +6,12 @@ on Azure. By making use of tools like [Terraform](https://www.terraform.io/) and
 Linux containers, our goal is to minimize the amount of manual work involved in setting 
 up a pool. 
 
-I am not a Terraform, Azure, container, or Cardano expert, so what you are reading is my learning process. **There are no warranties.** I may be doing things
-that are bad practice, expensive, overly complicated, or insecure (though I'm hyper-focused 
-on avoiding this last point).
+I am not a Terraform, Azure, container, or Cardano expert, so what you are reading is my learning process. **There are no warranties.** I may be doing things that are bad practice, expensive, overly complicated, or insecure (though I'm hyper-focused on avoiding this last point).
 
 The subtasks are:
 
 1. [Laptop setup](10-laptop-setup.md). Set up tools on my laptop.
-1. **Azure bootstrap.** Create *just* enough Azure infrastructure to bootstrap Terraform.
+1. [Azure setup](20-azure-setup.md). Create *just* enough Azure infrastructure to bootstrap Terraform.
 1. **Terraform working from laptop.** Make sure I can use Terraform to configure Azure.
 1. **Write Terraform file(s) for one node.** Get generic Cardano container running from official image.
 1. **Create config files.** Create and push config files for one customized Cardano container.
@@ -21,7 +19,8 @@ The subtasks are:
 geographic redundancy.
 
 The subtask docs focus heavily on the **HOW** of doing this, without a lot of explanation. This 
-is by design.
+is by design. Further, these are all done on Mac OSX; you're mileage will vary if not using Mac, 
+especially if on Windows.
 
 
 
