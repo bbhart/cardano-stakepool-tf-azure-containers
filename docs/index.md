@@ -1,4 +1,5 @@
-# Cardano staking pool on Azure
+Cardano staking pool on Azure
+=============================
 
 Step-by-step instructions for configuring a complete Cardano staking pool 
 on Azure. By making use of tools like [Terraform](https://www.terraform.io/) and 
@@ -11,7 +12,7 @@ on avoiding this last point).
 
 The subtasks are:
 
-1. **Laptop setup.** Set up tools on my laptop.
+1. [Laptop setup](10-laptop-setup.md). Set up tools on my laptop.
 1. **Azure bootstrap.** Create *just* enough Azure infrastructure to bootstrap Terraform.
 1. **Terraform working from laptop.** Make sure I can use Terraform to configure Azure.
 1. **Write Terraform file(s) for one node.** Get generic Cardano container running from official image.
@@ -19,7 +20,8 @@ The subtasks are:
 1. **Scale to cluster.** Expand so that we have 1 block-producing node and 2 relays, with some 
 geographic redundancy.
 
-
+The subtask docs focus heavily on the **HOW** of doing this, without a lot of explanation. This 
+is by design.
 
 
 
