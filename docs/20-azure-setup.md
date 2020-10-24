@@ -61,7 +61,6 @@ az keyvault secret set --vault-name ${NONCE}-keyvault-stage --name "terraform-ba
 az keyvault secret set --vault-name ${NONCE}-keyvault-stage --name "state-storage-account-name" --value "${SA}"
 az keyvault secret set --vault-name ${NONCE}-keyvault-stage --name "state-storage-container-name" --value "tstate"
 az keyvault secret set --vault-name ${NONCE}-keyvault-stage --name "my-subscription-id" --value "${SUBID}"
-
 az keyvault secret set --vault-name ${NONCE}-keyvault-prod --name "terraform-backend-key" --value "${SA_KEY}"
 az keyvault secret set --vault-name ${NONCE}-keyvault-prod --name "state-storage-account-name" --value "${SA}"
 az keyvault secret set --vault-name ${NONCE}-keyvault-prod --name "state-storage-container-name" --value "tstate"
