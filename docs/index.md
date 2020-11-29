@@ -11,8 +11,7 @@ I am not a Terraform, Azure, container, or Cardano expert, so what you are readi
 The subtasks are:
 
 1. [Laptop setup](10-laptop-setup.md). Set up tools on my laptop.
-1. [Azure setup](20-azure-setup.md). Create *just* enough Azure infrastructure to bootstrap Terraform.
-1. **Terraform working from laptop.** Make sure I can use Terraform to configure Azure.
+1. [Azure and Terraform setup](20-azure-setup.md). Create *just* enough Azure infrastructure to bootstrap Terraform.
 1. **Write Terraform file(s) for one node.** Get generic Cardano container running from official image.
 1. **Create config files.** Create and push config files for one customized Cardano container.
 1. **Scale to cluster.** Expand so that we have 1 block-producing node and 2 relays, with some 
@@ -27,4 +26,4 @@ especially if on Windows.
 References
 ----------
 
-1. https://blog.logrocket.com/real-world-azure-resource-management-with-terraform-and-docker/
+1. [https://blog.logrocket.com/real-world-azure-resource-management-with-terraform-and-docker/]

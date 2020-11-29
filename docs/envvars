@@ -1,0 +1,19 @@
+# CHANGE: NONCE to be something unique like your initials (no spaces)
+export NONCE=bbhart
+
+# CHANGE: location to be something near you
+# See: `az account list-locations -o table`
+export LOCATION=eastus
+
+export RESOURCE_GROUP_NAME=cardanopool1
+export STORAGE_ACCOUNT_NAME=tstate${NONCE}
+export CONTAINER_NAME=tstate
+export KEYVAULTNAME=cardano-keyvault-${NONCE}
+
+export ARM_ACCESS_KEY=$(az keyvault secret show --name SAKEY --vault-name ${KEYVAULTNAME} --query value -o tsv)
+
+# For Terraform
+export TF_VAR_rg=${RESOURCE_GROUP_NAME}
+export TF_VAR_storageacctname=${STORAGE_ACCOUNT_NAME}
+export TF_VAR_containername=${CONTAINER_NAME}
+
